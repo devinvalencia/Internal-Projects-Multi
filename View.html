@@ -1,0 +1,10 @@
+<sp-panel ng-if="data.hasRecordsToShow || data.canCreateRecord" rect="rect">
+	<div ng-if="data.hasRecordsToShow">
+		<sp-widget widget="data.list" />
+	</div>
+	<a ng-if="data.canCreateRecord" id="new_record" href="{{data.url}}">
+		<button type="button" class="btn btn-{{options.color}}">
+			${Add New Internal Project}
+		</button>
+	</a>
+</sp-panel>

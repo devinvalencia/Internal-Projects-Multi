@@ -1,0 +1,10 @@
+<sp-panel ng-if="data.hasRecordsToShow || data.canAddContact"rect="rect">
+	<div ng-if="data.hasRecordsToShow">
+		<sp-widget widget="data.list" />
+	</div>
+	<a ng-if="data.canAddContact" id="new_contact" href="{{data.url}}">
+		<button type="button" class="btn btn-{{options.color}}">
+			${Add new contact}
+		</button>
+	</a>
+</sp-panel>
